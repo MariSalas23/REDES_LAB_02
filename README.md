@@ -53,6 +53,4 @@ En conclusión, la propuesta de la red para permitir que la familia Pérez pueda
 
 [2] "Sketching 3D Illustrations of Interior Spaces," *Pngtree*, 2023. [Enlace]. Disponibilidad: https://es.pngtree.com/freebackground/sketching-3d-illustrations-of-interior-spaces_5812116.html (consultado el: 17 de agosto de 2024).
 
-[3] "DNS vs DHCP: Exploring the Key Differences," *Ascent Optics*, 2023. [Enlace]. Disponibilidad: https://ascentoptics.com/blog/es/dns-vs-dhcp-exploring-the-key-differences/#:~:text=R%3A%20DNS%20(Sistema%20de%20nombres,a%20dispositivos%20en%20una%20red. (consultado el: 17 de agosto de 2024).
-
-[4] "1125 - CREAR UNA RED SIMPLE CON PACKET TRACER," *CARLOS ALEJANDRO FLORES*, 2020. [Enlace]. Disponibilidad: https://youtu.be/FA0D6bQjPg4?si=kq4IX22AaTo3ToeH (consultado el: 17 de agosto de 2024).
+[3] "1125 - CREAR UNA RED SIMPLE CON PACKET TRACER," *CARLOS ALEJANDRO FLORES*, 2020. [Enlace]. Disponibilidad: https://youtu.be/FA0D6bQjPg4?si=kq4IX22AaTo3ToeH (consultado el: 17 de agosto de 2024).
