@@ -22,7 +22,7 @@ Para llevar a cabo el laboratorio y desarrollar la solución de la problemática
 - **Router:** Después de que el módem obtiene la información de Internet, este transmite los datos a los dispositivos personales.
 - **Smartphones, laptop y PC:** Dispositivos desde los cuales los integrantes de la familia Pérez navegan por el sitio web de Disney +.
   
-### Topologías
+### Topología
 En este caso, se utiliza la topología tipo estrella. Esta fue escogida por ser sencilla de implementar y de mantener, razones por las cuales es comúnmente utilizada en redes pequeñas o medianas, donde hay una cantidad limitada de dispositivos y una baja demanda de ancho de banda, tales como la red doméstica de la casa de la familia Pérez.
 
 ![Imagen](redes_lab01.jpg)
