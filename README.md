@@ -5,16 +5,16 @@
 - **Juan Pablo Restrepo Coca** (0000305110)
 - **Mariana Salas Gutiérrez** (0000296781)
 
-## Introducción
+## 1. Introducción
 En la actualidad, las redes son fundamentales para la tecnología moderna. Son estas las que permiten la conexión de dispositivos a nivel mundial, facilitando la comunicación entre personas, empresas y organizaciones en diferentes ubicaciones geográficas. Es decir, gracias a ellas, se puede acceder a sitios web, entre otras cosas.
 
-## Objetivo
+## 2. Objetivo
 El objetivo del presente laboratorio es permitir que Fernando Pérez y sus familiares puedan acceder al sitio web de Disney+ desde su hogar, utilizando sus dispositivos personales, mediante una red y comunicación de datos.
 
-## Metodología
+## 3. Metodología
 Para llevar a cabo el laboratorio y desarrollar la solución de la problemática establecida, se emplea la herramienta de CISCO Packet Tracer [1] con el fin de realizar el diseño de la red y su respectiva simulación. Es importante mencionar que para simular la estructura de una casa real, se utiliza una imagen de fondo [2] que se encuentra referenciada al final de la wiki.
 
-## Desarrollo de la solución
+## 4. Desarrollo de la solución
 
 ...
 ![Imagen](redes_lab01.jpg)
@@ -42,13 +42,13 @@ En este caso, la topología de la red es de tipo estrella. Esta fue escogida por
 ### Arquitecturas y servicios
 - Un servicio de DNS, como Amazon Route 53, es un servicio distribuido globalmente que convierte los nombres legibles por las personas, como www.example.com, en las direcciones IP numéricas, como 192.0.2.1, que utilizan los equipos para conectarse entre sí. DHCP [3].
 
-## Desafíos
+## 5. Desafíos
 Para completar este laboratorio, el mayor desafío encontrado fue lograr la funcionalidad en Cisco Packet Tracer. Por ello, fue necesario buscar información adicional acerca del programa para aplicar los conceptos de DNS y DHCP [4].
 
-## Conclusión
+## 6. Conclusión
 En conclusión, la propuesta de la red para permitir que la familia Pérez pueda navegar por el sitio web de disneyplus.com desde sus dispositivos ha sido exitosa. Sin embargo, durante el desarrollo de la solución se presentaron desafíos ya que se contaba con poca experiencia utilizando Cisco Packet Tracer y se trataba del primer laboratorio. Por ende, este trabajo reforzó los conocimientos del grupo acerca de no solo el diseño de una red para ser aplicada en una situación de la vida real, si no también del programa de Cisco.
 
-## Referencias
+## 7. Referencias
 [1] "Cisco Packet Tracer," *Cisco Systems*, 2024. [Enlace]. Disponibilidad: https://www.netacad.com/courses/networking/
 
 [2] "Sketching 3D Illustrations of Interior Spaces," *Pngtree*, 2023. [Enlace]. Disponibilidad: https://es.pngtree.com/freebackground/sketching-3d-illustrations-of-interior-spaces_5812116.html (consultado el: 17 de agosto de 2024).
