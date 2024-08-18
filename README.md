@@ -17,13 +17,15 @@ Para llevar a cabo el laboratorio y desarrollar la solución de la problemática
 ## Desarrollo de la solución
 
 ### Elementos
-- **Servidor:** Que es lo que proporciona los servicios, en este caso de Disney +
-- **Modem:** El aparato que permite la comunicación entre una red de área extensa, también conocida como WAN y la casa.
-- **Router:** Después de que el módem obtiene información de Internet, este es el dispositivo que transmite los datos a los dispositivos personales.
-- Estos **dispositivos personales** son los smartphones, laptop y PC, desde los cuales los integrantes de la familia Perez van a acceder al sitio web de Disney +.
+- **Servidor:** disneyplus.com
+- **Modem:** El dispositivo que permite la comunicación entre la red WAN y la casa de la familia Pérez.
+- **Router:** Después de que el módem obtiene la información de Internet, este transmite los datos a los dispositivos personales.
+- **Smartphones, laptop y PC:** Dispositivos desde los cuales los integrantes de la familia Pérez navegan por el sitio web de Disney +.
   
 ### Topologías
-En este caso, se utiliza la topología tipo estrella. Esta fue escogida por ser sencilla de implementar y de mantener, razones por las cuales es comúnmente utilizada en redes pequeñas o medianas, donde hay una cantidad limitada de dispositivos y una baja demanda de ancho de banda, tales como la red doméstica de la casa de la familia Perez.
+En este caso, se utiliza la topología tipo estrella. Esta fue escogida por ser sencilla de implementar y de mantener, razones por las cuales es comúnmente utilizada en redes pequeñas o medianas, donde hay una cantidad limitada de dispositivos y una baja demanda de ancho de banda, tales como la red doméstica de la casa de la familia Pérez.
+
+![Imagen](redes_lab01.jpg)
 
 ### Tipos de redes
 - LAN: Una red de área local o LAN es una red que facilita la comunicación y el intercambio de datos entre dispositivos a nivel local a distancias limitadas. Por esto, este tipo de red se utiliza para hogares privados, como la casa de Fernando Perez.
