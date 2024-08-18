@@ -17,7 +17,7 @@ Para llevar a cabo el laboratorio y desarrollar la solución de la problemática
 ## 4. Desarrollo de la solución
 
 ...
-![Imagen](redes_lab01.jpg)
+![Imagen](redes:lab01.jpg)
 
 ### Elementos
 - **Servidor:** disneyplus.com
@@ -40,10 +40,10 @@ En este caso, la topología de la red es de tipo estrella. Esta fue escogida por
 - Modelo TCP/IP
 
 ### Arquitecturas y servicios
-- Un servicio de DNS, como Amazon Route 53, es un servicio distribuido globalmente que convierte los nombres legibles por las personas, como www.example.com, en las direcciones IP numéricas, como 192.0.2.1, que utilizan los equipos para conectarse entre sí. DHCP [3].
+Para facilitar que Fernando Pérez y su familia naveguen por Disney+, la arquitectura de la red cliente-servidor proporciona servicios como DNS y DHCP.
 
 ## 5. Desafíos
-Para completar este laboratorio, el mayor desafío encontrado fue lograr la funcionalidad en Cisco Packet Tracer. Por ello, fue necesario buscar información adicional acerca del programa para aplicar los conceptos de DNS y DHCP [4].
+Para completar este laboratorio, el mayor desafío encontrado fue lograr la funcionalidad en Cisco Packet Tracer. Por ello, fue necesario buscar información adicional acerca del programa para aplicar los conceptos de DNS y DHCP [3].
 
 ## 6. Conclusión
 En conclusión, la propuesta de la red para permitir que la familia Pérez pueda navegar por el sitio web de disneyplus.com desde sus dispositivos ha sido exitosa. Sin embargo, durante el desarrollo de la solución se presentaron desafíos ya que se contaba con poca experiencia utilizando Cisco Packet Tracer y se trataba del primer laboratorio. Por ende, este trabajo reforzó los conocimientos del grupo acerca de no solo el diseño de una red para ser aplicada en una situación de la vida real, si no también del programa de Cisco.
