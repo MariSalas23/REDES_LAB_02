@@ -9,10 +9,10 @@
 Las redes son fundamentales 
 
 ## Objetivo
-El objetivo del presente laboratorio es permitir que Fernando Pérez y sus familiares puedan acceder al sitio web de Disney+ desde sus hogares, utilizando sus dispositivos personales, mediante de una red y comunicación de datos.
+El objetivo del presente laboratorio es permitir que Fernando Pérez y sus familiares puedan acceder al sitio web de Disney+ desde su hogar, utilizando sus dispositivos personales, mediante una red y comunicación de datos.
 
 ## Metodología
-Para llevar a cabo el laboratorio y desarrollar la solución de la problemática establecida, se emplea la herramienta de CISCO Packet Tracer con el fin de realizar el diseño de la red y su respectiva simulación.
+Para llevar a cabo el laboratorio y desarrollar la solución de la problemática establecida, se emplea la herramienta de CISCO Packet Tracer con el fin de realizar el diseño de la red y su respectiva simulación. Es importante mencionar que para simular la estructura de una casa real, se utiliza una imagen de fondo que se encuentra referenciada al final de la wiki.
 
 ## Desarrollo de la solución
 
@@ -23,7 +23,7 @@ Para llevar a cabo el laboratorio y desarrollar la solución de la problemática
 - **Smartphones, laptop y PC:** Dispositivos desde los cuales los integrantes de la familia Pérez navegan por el sitio web de Disney +.
   
 ### Topología
-En este caso, se utiliza la topología tipo estrella. Esta fue escogida por ser sencilla de implementar y de mantener, razones por las cuales es comúnmente utilizada en redes pequeñas o medianas, donde hay una cantidad limitada de dispositivos y una baja demanda de ancho de banda, tales como la red doméstica de la casa de la familia Pérez.
+En este caso, la topología de la red es de tipo estrella. Esta fue escogida por ser sencilla de implementar y de mantener, razones por las cuales es comúnmente utilizada en redes pequeñas o medianas, donde hay una cantidad limitada de dispositivos y una baja demanda de ancho de banda, tales como la red doméstica de la casa de la familia Pérez.
 
 ![Imagen](redes_lab01.jpg)
 
