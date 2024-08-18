@@ -17,7 +17,7 @@ Para llevar a cabo el laboratorio y desarrollar la solución de la problemática
 ## 4. Desarrollo de la solución
 
 ...
-![Imagen](redes:lab01.jpg)
+![Imagen](redes_lab01.jpg)
 
 ### Elementos
 - **Servidor:** disneyplus.com
