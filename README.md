@@ -16,7 +16,8 @@ Para llevar a cabo el laboratorio y desarrollar la solución de la problemática
 
 ## 4. Desarrollo de la solución
 
-...
+Se plantea a la casa de la familia Pérez como una red local (LAN), también teniendo dispositivos conectados de forma inalámbrica (WLAN). Los dispositivos personales se conectan al router y este al modem. Este último se encuentra conectado a una red de área amplia (WAN), la cual se encarga de permitir la comunicación entre el servidor de Disney+ y el hogar de la familia Pérez.
+
 ![Imagen](redes_lab01.jpg)
 
 ### Elementos
@@ -49,8 +50,8 @@ Para completar este laboratorio, el mayor desafío encontrado fue lograr la func
 En conclusión, la propuesta de la red para permitir que la familia Pérez pueda navegar por el sitio web de disneyplus.com desde sus dispositivos ha sido exitosa. Sin embargo, durante el desarrollo de la solución se presentaron desafíos ya que se contaba con poca experiencia utilizando Cisco Packet Tracer y se trataba del primer laboratorio. Por ende, este trabajo reforzó los conocimientos del grupo acerca de no solo el diseño de una red para ser aplicada en una situación de la vida real, si no también del programa de Cisco.
 
 ## 7. Referencias
-[1] "Cisco Packet Tracer," *Cisco Systems*, 2024. [Enlace]. Disponibilidad: https://www.netacad.com/courses/networking/
+[1] "Cisco Packet Tracer", *Cisco Systems*, 2024. [Enlace]. Disponible: https://www.netacad.com/courses/networking/
 
-[2] "Sketching 3D Illustrations of Interior Spaces," *Pngtree*, 2023. [Enlace]. Disponibilidad: https://es.pngtree.com/freebackground/sketching-3d-illustrations-of-interior-spaces_5812116.html (consultado el: 17 de agosto de 2024).
+[2] "Sketching 3D Illustrations of Interior Spaces", *Pngtree*, 2023. Accedido el 19 de agosto de 2024. [En línea]. Disponible: https://es.pngtree.com/freebackground/sketching-3d-illustrations-of-interior-spaces_5812116.html
 
-[3] "1125 - CREAR UNA RED SIMPLE CON PACKET TRACER," *CARLOS ALEJANDRO FLORES*, 2020. [Enlace]. Disponibilidad: https://youtu.be/FA0D6bQjPg4?si=kq4IX22AaTo3ToeH (consultado el: 17 de agosto de 2024).
+[3] CARLOS ALEJANDRO FLORES HILAZACA. *"1125 - CREAR UNA RED SIMPLE CON PACKET TRACER"*. (19 de abril de 2020). Accedido el 19 de agosto de 2024. [Video en línea]. Disponible: https://www.youtube.com/watch?v=FA0D6bQjPg4
