@@ -75,7 +75,7 @@ Se aplicó una metodología de diseño estructurado, donde se segmentó la red e
 
 - (8)  y  (9) erifique que haya conectividad entre las PCs y dispositivos móviles pertenecientes a la misma VLAN. ¿Qué comandos TCP/IP debe utilizar? ¿Los PCs y dispositivos móviles tienen conectividad con su puerta de enlace? ¿Por qué ¿Existe conectividad entre PCs pertenecientes a VLAN distintas? ¿Por qué? Capture la verificación realizada.
 
-- **(10)** STP
+- **(10)** El protocolo STP está configurado y el comando es *show spanning tree*. En este caso, la interface fa 0/1 de SW2 fue escogida como raíz por su menor prioridad y dirección MAC.
 ![Imagen](stp.png)
 **Figura #.** Spanning-Tree.
   
