@@ -65,8 +65,8 @@ Se aplicó una metodología de diseño estructurado, donde se segmentó la red e
 3)  Evidencia configuración básica en router y switch.
 4)  ¿Se requiere asignación dinámica y/o estática?¿Dónde?¿Traducción de direcciones de forma dinámica y/o estático y/o por puertos? ¿En qué terminales se deben configurar los servicios requeridos?
 5)  Realice la asignación eficiente del esquema de direccionamiento desarrollado (tabla de direccionamiento). Verifique que se haya asignado correctamente las direcciones IP a cada uno de las interfaces de red de nodos terminales e intermedios. ¿Qué comando TCP/IP debe utilizar? Capture la verificación realizada.
-6)  7) Verifique que se hayan creado y configurado correctamente las VLANs. ¿Qué comando CISCO debe utilizar? Capture la verificación realizada.
-8)  9) erifique que haya conectividad entre las PCs y dispositivos móviles pertenecientes a la misma VLAN. ¿Qué comandos TCP/IP debe utilizar? ¿Los PCs y dispositivos móviles tienen conectividad con su puerta de enlace? ¿Por qué ¿Existe conectividad entre PCs pertenecientes a VLAN distintas? ¿Por qué? Capture la verificación realizada.
+6)  y  (7) Verifique que se hayan creado y configurado correctamente las VLANs. ¿Qué comando CISCO debe utilizar? Capture la verificación realizada.
+8)  y  (9) erifique que haya conectividad entre las PCs y dispositivos móviles pertenecientes a la misma VLAN. ¿Qué comandos TCP/IP debe utilizar? ¿Los PCs y dispositivos móviles tienen conectividad con su puerta de enlace? ¿Por qué ¿Existe conectividad entre PCs pertenecientes a VLAN distintas? ¿Por qué? Capture la verificación realizada.
 10) STP
 11) Telnet
 12) Rutas
