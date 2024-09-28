@@ -64,7 +64,18 @@ Se aplicó una metodología de diseño estructurado, donde se segmentó la red e
 
 ### 1) Responda a cada una de las preguntas guías del diseño estructurado propuesta en clase y documente todo el proceso de desarrollo del esquema de direccionamiento IPv4 propuesto por su equipo y diligencie las tablas de subneteo y direccionamiento de la red. 
 
-### Preguntas
+#### Preguntas
+
+- **¿Cuántas subredes necesito?** 172.17.0.0 / 16 necesita 4 subredes para la topología propuesta.
+- **¿Cuántos hosts requieren?** VLAN 20 y VLAN 40 requieren 1022 hosts, VLAN 55 y 99 requieren de 254 hosts.
+- **¿Qué dispositivos son parte de cada subnet?**
+- *VLAN 20:* Para PC1, PC3 y Smartphone.
+- *VLAN 40:* Para PC2, PC4 y Tablet.
+- *VLAN 55:* Para Servers, Printers y Laptop.
+- *VLAN 99:* Para nodos intermedios.
+- **¿Cuáles son privadas y públicas?** Los nodos finales que quieren acceder a internet necesitan direcciones públicas, los demás pueden tener direcciones privadas.
+- **¿Dónde deberían conservarse las direcciones?** Las direcciones son estáticas en los servidores. Las demás pueden ser dinámicas.
+- **¿Cómo se asignan los dispositivos y las interfaces?** Se muestra en las tablas a continuación.
 
 #### Tabla de Subnetting
 ![Imagen](SUBNET_CHART.png)
