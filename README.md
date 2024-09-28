@@ -20,7 +20,9 @@ Para llevar a cabo el laboratorio y desarrollar la solución de la problemática
 ## 2. Resultados de configuración y verificación de funcionamiento de la topología
 
 La topología de la red está diseñada para una empresa que conecta sus dispositivos a una red corporativa centralizada con acceso a una red más amplia (WAN) y a servicios externos. La red local se segmenta mediante VLANs para organizar y optimizar el tráfico de diferentes tipos de dispositivos, usuarios y servicios. Se implementan técnicas avanzadas de seguridad y administración para garantizar la estabilidad, confiabilidad y escalabilidad de la red a largo plazo.
+
 ![Imagen](RedEmpresarial.png)
+**Figura 1.** Topología.
 
 ### Elementos
 - **Access Point:** LAP1 utilizado para proporcionar conectividad inalámbrica.
@@ -58,7 +60,19 @@ Se aplicó una metodología de diseño estructurado, donde se segmentó la red e
 
 ## 3. Respuestas a las preguntas formuladas en la sección de procedimiento
 
-1)
+1)  El esquema de direccionamiento IPv4 basado en los requerimientos de red, y considerando X = 1, se presenta en las tablas de subnetting y direccionamiento en *4. Resultados y Análisis*.
+2)  El montaje de la topología propuesta se puede visualizar en la *Figura 1*.
+3)  Evidencia configuración básica en router y switch.
+4)  ¿Se requiere asignación dinámica y/o estática?¿Dónde?¿Traducción de direcciones de forma dinámica y/o estático y/o por puertos? ¿En qué terminales se deben configurar los servicios requeridos?
+5)  Realice la asignación eficiente del esquema de direccionamiento desarrollado (tabla de direccionamiento). Verifique que se haya asignado correctamente las direcciones IP a cada uno de las interfaces de red de nodos terminales e intermedios. ¿Qué comando TCP/IP debe utilizar? Capture la verificación realizada.
+6)  - 7) Verifique que se hayan creado y configurado correctamente las VLANs. ¿Qué comando CISCO debe utilizar? Capture la verificación realizada.
+8)  - 9) erifique que haya conectividad entre las PCs y dispositivos móviles pertenecientes a la misma VLAN. ¿Qué comandos TCP/IP debe utilizar? ¿Los PCs y dispositivos móviles tienen conectividad con su puerta de enlace? ¿Por qué ¿Existe conectividad entre PCs pertenecientes a VLAN distintas? ¿Por qué? Capture la verificación realizada.
+10) STP
+11) Telnet
+12) Rutas
+13) DNS
+14) No se utilizó otro servicio adicional.
+15) Los archivos con las configuraciones TXT se encuentran anexadas en la tarea de Teams.
 
 ## 4. Resultados y Análisis
 
