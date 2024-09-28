@@ -64,9 +64,11 @@ Se aplicó una metodología de diseño estructurado, donde se segmentó la red e
 
 ###1) Responda a cada una de las preguntas guías del diseño estructurado propuesta en clase y documente todo el proceso de desarrollo del esquema de direccionamiento IPv4 propuesto por su equipo y diligencie las tablas de subneteo y direccionamiento de la red. 
 
+###Preguntas
+
 ####Tablas
-![Imagen](SUBNET CHART.png)
-![Imagen](ADDRESS TABLE.png)
+![Imagen](SUBNET_CHART.png)
+![Imagen](ADDRESS_TABLE.png)
 
 ###2) Presente el análisis y proceso de configuración de los servicios de red requeridos para el correcto funcionamiento de la red empresarial. 
 
