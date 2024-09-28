@@ -64,26 +64,32 @@ Se aplicó una metodología de diseño estructurado, donde se segmentó la red e
   
 - **(2)**  El montaje de la topología propuesta se puede visualizar en la *Figura 1*.
   
-- **(3)**  A continuación, se evidencia la configuración básica en los routers y switches, definiendo una contraseña y hostname. A lo largo de la wiki se muestra evidencia de la correcta configuración de las VLAN y direcciones IP.             ![Imagen](confi.png)
+- **(3)**  A continuación, se evidencia la configuración básica en los routers y switches, definiendo una contraseña y hostname. A lo largo de la wiki se muestra evidencia de la correcta configuración de las VLAN y direcciones IP.
+  
+             ![Imagen](confi.png)
 **Figura 4.** Configuración básica.
   
 - **(4)**  Se emplea asignación y traducción estática para los servidores. Para la red de SOHO, los demás dispositivos cuentan con asignación dinámica por medio del DHCP. La traducción dinámica se puede aplicar a esta parte de la red considerando que podrían añadirse más dispositivos y hacerlo de forma manual no sería muy eficiente. NAT se debe configurar en el router, al igual que en R_SOHO se cofiguró la IP del DHCP Server.
 
 - **(5)**  Para verificar la asignación eficiente del esquema de direccionamiento desarrollado (tabla de direccionamiento), se usa el comando TCP/IP *show ip interface brief*.
+  
        ![Imagen](ip.png)
 **Figura 5.** Direcciones IP de las Interfaces.
   
 - **(6)  y  (7)** Para verificar que se hayan creado y configurado correctamente las VLANs que se definieron en la tabla de subnetting, se utiliza el comando *show vlan brief*.
+  
        ![Imagen](vlan.png)
 **Figura 6.** VLANs.
 
 - (8)  y  (9) Verifique que haya conectividad entre las PCs y dispositivos móviles pertenecientes a la misma VLAN. ¿Qué comandos TCP/IP debe utilizar? ¿Los PCs y dispositivos móviles tienen conectividad con su puerta de enlace? ¿Por qué ¿Existe conectividad entre PCs pertenecientes a VLAN distintas? ¿Por qué? Capture la verificación realizada.
 
 - **(10)** El protocolo STP está configurado y el comando es *show spanning tree*. En este caso, la interface fa 0/1 de SW2 fue escogida como raíz por su menor prioridad y dirección MAC.
-![Imagen](stp.png)
+  
+       ![Imagen](stp.png)
 **Figura #.** Spanning-Tree.
   
 - **(11)** El comando para realizar un telnet es *telnet Dirección_IP*. En la siguiente imagen se muestra que es posible hacer telnet de un PC a R_SOHO y switches.
+  
        ![Imagen](telnet.png)
 **Figura #.** Telnet.
 
