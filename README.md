@@ -21,7 +21,7 @@ Para llevar a cabo el laboratorio y desarrollar la solución de la problemática
 
 La topología de la red está diseñada para una empresa que conecta sus dispositivos a una red corporativa centralizada con acceso a una red más amplia (WAN) y a servicios externos. La red local se segmenta mediante VLANs para organizar y optimizar el tráfico de diferentes tipos de dispositivos, usuarios y servicios. Se implementan técnicas avanzadas de seguridad y administración para garantizar la estabilidad, confiabilidad y escalabilidad de la red a largo plazo.
 
-![Imagen](RedEmpresarial.png)
+![Imagen](RedEmpresarial1.png)
 **Figura 1.** Topología.
 
 ### Elementos
