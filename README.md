@@ -58,7 +58,19 @@ Se aplicó una metodología de diseño estructurado, donde se segmentó la red e
 
 ## 3. Respuestas a las preguntas formuladas en la sección de procedimiento
 
+1)
+
 ## 4. Resultados y Análisis
+
+###1) Responda a cada una de las preguntas guías del diseño estructurado propuesta en clase y documente todo el proceso de desarrollo del esquema de direccionamiento IPv4 propuesto por su equipo y diligencie las tablas de subneteo y direccionamiento de la red. 
+
+####Tablas
+![Imagen](SUBNET CHART.png)
+![Imagen](ADDRESS TABLE.png)
+
+###2) Presente el análisis y proceso de configuración de los servicios de red requeridos para el correcto funcionamiento de la red empresarial. 
+
+###3) Evalúe el flujo bidireccional de datos generado al acceder a la página alojada en el servidor Web por los nodos terminales (PCs y dispositivos móviles) de las diferentes VLANs que conforman la topología de la Figura 1, utilizando el servicio DNS. Como también, al verificar la conectividad de un PCs a otro y de un PC al Gateway. Justifique su análisis utilizando capturas con el simulador y los filtros de paquetes de Cisco Packet Tracer. 
 
 ## 5. Desafíos
 Durante el proceso de configuración en **Cisco Packet Tracer**, uno de los desafíos más grandes fue la correcta configuración de las VLANs y la asignación de direcciones IP dinámicas utilizando DHCP. La configuración del WLC también fue un gran reto a solucionar.
