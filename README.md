@@ -19,7 +19,7 @@ Para llevar a cabo el laboratorio y desarrollar la solución de la problemática
 
 ## 2. Resultados de configuración y verificación de funcionamiento de la topología
 
-La topología de la red está diseñada para una empresa que conecta sus dispositivos a una red corporativa centralizada con acceso a una red más amplia (WAN) y a servicios externos, como internet, VPNs y servidores en la nube. La red local se segmenta mediante VLANs para organizar y optimizar el tráfico de diferentes tipos de dispositivos, usuarios y servicios. Se implementan técnicas avanzadas de seguridad y administración para garantizar la estabilidad, confiabilidad y escalabilidad de la red a largo plazo.
+La topología de la red está diseñada para una empresa que conecta sus dispositivos a una red corporativa centralizada con acceso a una red más amplia (WAN) y a servicios externos. La red local se segmenta mediante VLANs para organizar y optimizar el tráfico de diferentes tipos de dispositivos, usuarios y servicios. Se implementan técnicas avanzadas de seguridad y administración para garantizar la estabilidad, confiabilidad y escalabilidad de la red a largo plazo.
 ![Imagen](RedEmpresarial.png)
 
 ### Elementos
@@ -40,6 +40,8 @@ La topología de la red está diseñada para una empresa que conecta sus disposi
 - HTTP (Hypertext Transfer Protocol).
 - Modelo TCP/IP.
 
+* Foto página
+
 ### Segmentación mediante VLANs
 Se crearon diferentes VLANs para organizar el tráfico en la red local:
 - **VLAN 20:** Para dispositivos invitados como smartphones.
@@ -47,13 +49,21 @@ Se crearon diferentes VLANs para organizar el tráfico en la red local:
 - **VLAN 55:** Para el servidor y dispositivos del equipo de TI.
 - **VLAN 99:** Nativa.
 
+  * Foto VLAN
+
 ### Esquema de direccionamiento IPv4
 Se aplicó una metodología de diseño estructurado, donde se segmentó la red en subredes adecuadas para garantizar la correcta distribución de direcciones IP. La segmentación asegura un manejo eficiente de los recursos de IP y la escalabilidad futura del sistema.
+
+* Foto DHCP
+
+## 3. Respuestas a las preguntas formuladas en la sección de procedimiento
+
+## 4. Resultados y Análisis
 
 ## 5. Desafíos
 Durante el proceso de configuración en **Cisco Packet Tracer**, uno de los desafíos más grandes fue la correcta configuración de las VLANs y la asignación de direcciones IP dinámicas utilizando DHCP. La configuración del WLC también fue un gran reto a solucionar.
 
-## 6. Conclusión
+## 6. Conclusiones y Recomendaciones
 En conclusión, la propuesta de la red empresarial permite la correcta conexión de una red de área local al internet. Durante el desarrollo de la solución se presentaron desafíos, especialmente en la implementación de VLANs y servicios avanzados como NAT y AAA. A pesar de los retos, este trabajo reforzó los conocimientos del grupo sobre el diseño de redes empresariales y la configuración de dispositivos en **Cisco Packet Tracer**.
 
 ## 7. Referencias
