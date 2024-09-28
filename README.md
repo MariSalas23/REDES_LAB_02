@@ -60,9 +60,10 @@ Se aplicó una metodología de diseño estructurado, donde se segmentó la red e
 
 ## 3. Respuestas a las preguntas formuladas en la sección de procedimiento
 
-1)  El esquema de direccionamiento IPv4 basado en los requerimientos de red, y considerando X = 1, se presenta en las tablas de subnetting y direccionamiento en *4. Resultados y Análisis*.
+1)  El esquema de direccionamiento IPv4 basado en los requerimientos de red, y considerando X = 1, se presenta en las tablas de subnetting y direccionamiento en el apartado *4. Resultados y Análisis*.
 2)  El montaje de la topología propuesta se puede visualizar en la *Figura 1*.
-3)  Evidencia configuración básica en router y switch.
+3)  A continuación, se evidencia la configuración básica en los routers y switches, definiendo una contraseña y hostname. A lo largo de la wiki se muestra evidencia de la correcta configuración de las VLAN y direcciones IP.             ![Imagen](switch.png) ![Imagen](router.png)
+**Figura #.** Configuración básica.
 4)  ¿Se requiere asignación dinámica y/o estática?¿Dónde?¿Traducción de direcciones de forma dinámica y/o estático y/o por puertos? ¿En qué terminales se deben configurar los servicios requeridos?
 5)  Realice la asignación eficiente del esquema de direccionamiento desarrollado (tabla de direccionamiento). Verifique que se haya asignado correctamente las direcciones IP a cada uno de las interfaces de red de nodos terminales e intermedios. ¿Qué comando TCP/IP debe utilizar? Capture la verificación realizada.
 6)  y  7. Verifique que se hayan creado y configurado correctamente las VLANs. ¿Qué comando CISCO debe utilizar? Capture la verificación realizada.
