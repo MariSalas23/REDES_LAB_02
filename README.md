@@ -97,7 +97,7 @@ Aunque no se consiguió conectar los dispositivos móviles a la WLAN, si se logr
 ![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/conexion1.png)
 **Figura 8.** Ping de PC1 a PC3 y Printer0.
 
-- **(10)** El protocolo STP está configurado y el comando es *show spanning tree*. En este caso, para la VLAN 20, la interface fa 0/1 de SW2 fue escogida como raíz por su menor dirección MAC, ya que ambas opciones tenían la misma prioridad. Normalmente, se escoge la de menor prioridad, pero ya que cuentan ambas con una de 32788, el siguiente criterio es la dirección MAC. Está en estado "FWD" (Forwarding), lo que significa que está activo y reenviando tráfico hacia el puente raíz.
+- **(10)** El protocolo STP está configurado y el comando es *show spanning tree*. En este caso, para la VLAN 20, la interface fa 0/1 de SW2 fue escogida como raíz por su menor prioridad. Normalmente, se escoge la de menor prioridad, pero en caso de contar con la misma, el siguiente criterio es la menor dirección MAC. Está en estado "FWD" (Forwarding), lo que significa que está activo y reenviando tráfico hacia el puente raíz.
   
 ![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/stp.png)
 **Figura 9.** Spanning-Tree.
