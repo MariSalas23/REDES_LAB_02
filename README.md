@@ -21,7 +21,7 @@ Para llevar a cabo el laboratorio y desarrollar la solución de la problemática
 
 La topología de la red está diseñada para una empresa que conecta sus dispositivos a una red corporativa centralizada con acceso a una red más amplia (WAN) y a servicios externos. La red local se segmenta mediante VLANs para organizar y optimizar el tráfico de diferentes tipos de dispositivos, usuarios y servicios. Se implementan técnicas avanzadas de seguridad y administración para garantizar la estabilidad, confiabilidad y escalabilidad de la red a largo plazo.
 
-![Imagen](RedEmpresarial1.png)
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/RedEmpresarial1.png)
 **Figura 1.** Topología.
 
 ### Elementos
@@ -42,7 +42,7 @@ La topología de la red está diseñada para una empresa que conecta sus disposi
 - HTTP (Hypertext Transfer Protocol).
 - Modelo TCP/IP.
 
-![Imagen](pagina.png)
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/pagina.png)
 **Figura 2.** Página personalizada.
 
 ### Segmentación mediante VLANs
@@ -55,7 +55,7 @@ Se crearon diferentes VLANs para organizar el tráfico en la red local:
 ### Esquema de direccionamiento IPv4
 Se aplicó una metodología de diseño estructurado, donde se segmentó la red en subredes adecuadas para garantizar la correcta distribución de direcciones IP. La segmentación asegura un manejo eficiente de los recursos de IP y la escalabilidad futura del sistema.
 
-![Imagen](dhcp.png)
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/dhcp.png)
 **Figura 3.** DHCP.
 
 ## 3. Respuestas a las preguntas formuladas en la sección de procedimiento
@@ -66,35 +66,35 @@ Se aplicó una metodología de diseño estructurado, donde se segmentó la red e
   
 - **(3)**  A continuación, se evidencia la configuración básica en los routers y switches, definiendo una contraseña y hostname. A lo largo de la wiki se muestra evidencia de la correcta configuración de las VLAN y direcciones IP.
   
-![Imagen](confi.png)
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/confi.png)
 **Figura 4.** Configuración básica.
   
 - **(4)**  Se emplea asignación y traducción estática para los servidores. Para la red de SOHO, los demás dispositivos cuentan con asignación dinámica por medio del DHCP. La traducción dinámica se puede aplicar a esta parte de la red considerando que podrían añadirse más dispositivos y hacerlo de forma manual no sería muy eficiente. NAT se debe configurar en el router, al igual que en R_SOHO se cofiguró la IP del DHCP Server.
 
 - **(5)**  Para verificar la asignación eficiente del esquema de direccionamiento desarrollado (tabla de direccionamiento), se usa el comando TCP/IP *show ip interface brief*.
   
-![Imagen](ip.png)
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/ip.png)
 **Figura 5.** Direcciones IP de las Interfaces.
   
 - **(6)  y  (7)** Para verificar que se hayan creado y configurado correctamente las VLANs que se definieron en la tabla de subnetting, se utiliza el comando *show vlan brief*.
   
-![Imagen](vlan.png)
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/vlan.png)
 
 **Figura 6.** VLANs.
 
 - **(8)  y  (9)** Se verifica que haya conectividad entre dispositivos pertenecientes a la misma VLAN con el comando *ping IP_Destino*. En este ejemplo se hace desde PC1, que se conecta con PC3 (ambos son de la VLAN 20). Como el resultado es exitoso y PC3 envía reply, se confirma que los dispositivos tienen conectividad con su puerta de enlace, puesto que logran recorrer la ruta. Adicionalmente, los dispotivos de diferente VLAN también se conectan como se muestra en la siguiente imagen, donde se hizo un ping de PC1 a PC4 (IP 172.17.40.6) y Printer1 (IP 172.17.55.3). Es decir, existe conectividad entre PCs pertenecientes a VLAN distintas gracias a la correcta configuración de los routers, switches y DHCP. Antes de terminar el DHCP había problemas de comunicación entre VLAN, seguramente porque asignar tantas IP de forma manual es ineficiente y pueden ocurrir errores en el proceso.
 
-![Imagen](conexion.png)
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/conexion.png)
 **Figura 7.** Ping de PC1 a PC3 y Printer1.
 
 - **(10)** El protocolo STP está configurado y el comando es *show spanning tree*. En este caso, la interface fa 0/1 de SW2 fue escogida como raíz por su menor prioridad y dirección MAC.
   
-![Imagen](stp.png)
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/stp.png)
 **Figura 8.** Spanning-Tree.
   
 - **(11)** El comando para realizar un telnet es *telnet Dirección_IP*. En la siguiente imagen se muestra que es posible hacer telnet de un PC a R_SOHO y switches.
   
-![Imagen](telnet.png)
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/telnet.png)
 **Figura 9.** Telnet.
 
 - (12) Rutas
