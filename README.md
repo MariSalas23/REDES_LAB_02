@@ -53,9 +53,9 @@ Se crearon diferentes VLANs para organizar el tráfico en la red local:
 - **VLAN 99:** Nativa.
 
 ### Esquema de direccionamiento IPv4
-Se aplicó una metodología de diseño estructurado, donde se segmenta la red en subredes adecuadas para garantizar la correcta distribución de direcciones IP. La segmentación asegura un manejo eficiente de los recursos de IP y la escalabilidad futura del sistema.
+Se aplicó una metodología de diseño estructurado, donde se segmenta la red en subredes adecuadas para garantizar la correcta distribución de direcciones IP. La segmentación asegura un manejo eficiente de los recursos de IP y la escalabilidad futura del sistema. Se emplea el servicio DHCP con éxito como se ve a continuación.
 
-![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/dhcp.png)
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/dhcp1.png)
 **Figura 3.** DHCP.
 
 - Más capturas de configuración y verificación se encuentran en los siguientes apartados para resolver las preguntas propuestas en el laboratorio, analizar los resultados y justificar las conclusiones.
