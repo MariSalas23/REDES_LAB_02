@@ -89,12 +89,12 @@ Se aplicó una metodología de diseño estructurado, donde se segmentó la red e
 - **(10)** El protocolo STP está configurado y el comando es *show spanning tree*. En este caso, la interface fa 0/1 de SW2 fue escogida como raíz por su menor prioridad y dirección MAC.
   
 ![Imagen](stp.png)
-**Figura #.** Spanning-Tree.
+**Figura 7.** Spanning-Tree.
   
 - **(11)** El comando para realizar un telnet es *telnet Dirección_IP*. En la siguiente imagen se muestra que es posible hacer telnet de un PC a R_SOHO y switches.
   
 ![Imagen](telnet.png)
-**Figura #.** Telnet.
+**Figura 8.** Telnet.
 
 - (12) Rutas
 
