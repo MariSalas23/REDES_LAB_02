@@ -84,9 +84,9 @@ Se aplicó una metodología de diseño estructurado, donde se segmenta la red en
 
 **Figura 6.** VLANs.
 
-- **(8)  y  (9)** Se verifica que haya conectividad entre dispositivos pertenecientes a la misma VLAN con el comando *ping IP_Destino*. En este ejemplo, se hace desde PC1, que se conecta con PC3 (ambos son de la VLAN 20). Como el resultado es exitoso y PC3 envía reply, se confirma que los dispositivos tienen conectividad con su puerta de enlace, puesto que logran recorrer la ruta. Adicionalmente, los dispositivos de diferente VLAN también se conectan como se muestra en la siguiente imagen, donde se hizo un ping de PC1 a PC4 (IP 172.17.40.6) y Printer1 (IP 172.17.55.3). Es decir, existe conectividad entre PCs pertenecientes a VLAN distintas gracias a la correcta configuración de los routers, switches y DHCP. Antes de terminar el DHCP, habían problemas de comunicación entre VLAN, probablemente porque asignar tantas IP de forma manual es ineficiente y pueden ocurrir errores en el proceso.
+- **(8)  y  (9)** Se verifica que haya conectividad entre dispositivos pertenecientes a la misma VLAN con el comando *ping IP_Destino*. En este ejemplo, se hace desde PC1 (IP 172.17.20.3), que se conecta con PC3 (IP 172.17.20.2), ambos son de la VLAN 20. Como el resultado es exitoso y PC3 envía reply, se confirma que los dispositivos tienen conectividad con su puerta de enlace, puesto que logran recorrer la ruta. Adicionalmente, los dispositivos de diferente VLAN también se conectan como se muestra en la siguiente imagen, donde se hizo un ping de PC1 a PC4 (IP 172.17.40.3) y a Printer0 (IP 172.17.55.4). Es decir, existe conectividad entre PCs pertenecientes a VLAN distintas gracias a la correcta configuración de los routers, switches y DHCP. Antes de terminar el DHCP, habían problemas de comunicación entre VLANs, probablemente porque asignar tantas IP de forma manual es ineficiente y pueden ocurrir errores en el proceso.
 
-![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/conexion.png)
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/conexion1.png)
 **Figura 7.** Ping de PC1 a PC3 y Printer1.
 
 - **(10)** El protocolo STP está configurado y el comando es *show spanning tree*. En este caso, para la VLAN 20, la interface fa 0/1 de SW2 fue escogida como raíz por su menor dirección MAC, ya que ambas opciones tenían la misma prioridad. Normalmente, se escoge la de menor prioridad, pero ya que cuentan ambas con una de 32788, el siguiente criterio es la dirección MAC. Está en estado "FWD" (Forwarding), lo que significa que está activo y reenviando tráfico hacia el puente raíz.
@@ -99,13 +99,22 @@ Se aplicó una metodología de diseño estructurado, donde se segmenta la red en
 ![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/telnet.png)
 **Figura 9.** Telnet.
 
-- (12) Rutas
+- **(12)** El tipo ded enrutamiento en las interfaces de red es estático, ya que son rutas simples que casi no varían, como en el caso de las conexiones seriales. También porque se trata de una opción para redes pequeñas, como es el caso de SERVERS, donde solo hay dos servidores y un switch. Anexe la evidencias de configuración. 
 
-- (13) DNS
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/rutas.png)
+**Figura 10.** Rutas.
+
+- **(13)** Los dispositivos de la red SOHO tienen acceso a la página web personalizada alojada en el Servidor Web. El nombre de dominio es gestionado por el servidor DNS. Este nombre debe tener el siguiente formato: Iniciales_nombres_estudiantes.net. La página que se despliega se puede ver en la *Figura 2*.
+
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/dns.png)
+**Figura 11.** DNS.
 
 - **(14)** No se utilizó otro servicio adicional.
 
-- **(15)** Los archivos TXT con las configuraciones se encuentran anexados en la tarea de Teams.
+- **(15)**
+        - [TXT](https://github.com/MariSalas23/REDES_LAB_02/raw/main/Router_Config.txt)
+        - [TXT](https://github.com/MariSalas23/REDES_LAB_02/raw/main/Switch_Config.txt)
+        - Los archivos TXT con las configuraciones también se encuentran anexados en la tarea de Teams.
 
 ## 4. Resultados y Análisis
 
@@ -125,10 +134,10 @@ Se aplicó una metodología de diseño estructurado, donde se segmenta la red en
 - **¿Cómo se asignan los dispositivos y las interfaces?** Se muestra en las tablas a continuación.
 
 #### Tabla de Subnetting
-![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/sub.png)
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/sub1.png)
 
 #### Tabla de Direccionamiento
-![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/add.png)
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/add1.png)
 
 ### 2) Presente el análisis y proceso de configuración de los servicios de red requeridos para el correcto funcionamiento de la red empresarial. 
 
