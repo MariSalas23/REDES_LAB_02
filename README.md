@@ -15,7 +15,7 @@ El objetivo del presente laboratorio es diseñar, implementar y analizar una red
 Para llevar a cabo el laboratorio y desarrollar la solución de la problemática establecida, se emplea la herramienta de **Cisco Packet Tracer** [1] con el fin de realizar el diseño de la red y su respectiva simulación. Este software nos permite diseñar y simular el comportamiento de una red empresarial, probando las configuraciones de routers, switches, servidores y otros dispositivos necesarios para el funcionamiento de la red. Se configuraron distintos protocolos esenciales como DNS, DHCP y HTTP para asegurar el correcto funcionamiento de la red.
 - **Montaje:** Inicialmente, se realiza el cableado estructurado. Luego, se agrega el módulo WIC-2T para conexiones seriales en los router, Wireless LAN Controller (WLC) 3504 y Lightweight Access Point (LAP) 3702i. Después, se realiza la conexión por medio de las interfaces. Finalmente, se agregan las viñetas y recuadros para que quede más organizado.
 - **Configuración:** La primera configuración que se realiza es la de los dispositivos switch para crear las VLAN y definir sus puertos. Posteriormente, se configuraron los router para asignar las direcciones IP a las VLAN y definir el servidor DHCP. Tras configurar el router, se determina el servicio de DHCP en el server agregando un gateway, dirección IP de inicio y máscara de red para cada VLAN. A todos los routers y switches se les hizo la configuración básica (contraseña y hostname). Con las redes funcionando, se conectan a través de los routers determinados por rutas estáticas. Al final, se agregan los servicios de DNS y HTTP con sus respectivos servidores para poder acceder a una página web.
-- **Verificación:** Primero, se envía un ping desde el router SOHO a los diferentes dispositivos para confirmar que estén bien conectados. Luego, se manda un ping desde PC1 a PC3 para verificar la conectividad entre la misma VLAN. De la misma manera, se revisa la conectividad entre VLAN diferentes. También se confirma que el WLC y el LAP puedan hacer ping entre ellos. Después, se manda un ping entre routers y cuando funciona, se envía otro pero desde un PC. La última prueba que se realizó fue abrir la página *www.jnm.net* desde un PC de prueba.
+- **Verificación:** Primero, se envía un ping desde el router SOHO a los diferentes dispositivos para confirmar que estén bien conectados. Luego, se manda un ping desde PC1 a PC3 para verificar la conectividad entre la misma VLAN. De la misma manera, se revisa la conectividad entre VLAN diferentes. También se confirma que el WLC y el LAP puedan hacer ping entre ellos. Después, se manda un ping entre routers y cuando funciona, se envía otro pero desde un PC. La última prueba que se realizó fue abrir la página *www.jnm.net* desde un PC.
 
 ## 2. Resultados de configuración y verificación de funcionamiento de la topología
 
@@ -43,7 +43,7 @@ La topología de la red está diseñada para una empresa que conecta sus disposi
 - Modelo TCP/IP.
 
 ![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/pagina.png)
-**Figura 2.** Página personalizada.
+**Figura 2.** Página personalizada con las iniciales de los integrantes.
 
 ### Segmentación mediante VLANs
 Se crearon diferentes VLANs para organizar el tráfico en la red local:
@@ -125,10 +125,10 @@ Se aplicó una metodología de diseño estructurado, donde se segmenta la red en
 - **¿Cómo se asignan los dispositivos y las interfaces?** Se muestra en las tablas a continuación.
 
 #### Tabla de Subnetting
-![Imagen](SUBNET_CHART.png)
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/sub.png)
 
 #### Tabla de Direccionamiento
-![Imagen](ADDRESS_TABLE.png)
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/add.png)
 
 ### 2) Presente el análisis y proceso de configuración de los servicios de red requeridos para el correcto funcionamiento de la red empresarial. 
 
