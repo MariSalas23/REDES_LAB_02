@@ -208,5 +208,7 @@ Se recomienda trabajar utilizando comandos como *show interfaces*, *show vlan br
 
 ## 7. Referencias
 [1] "Cisco Packet Tracer", *Cisco Systems*, 2024. [Enlace]. Disponible: https://www.netacad.com/courses/networking/
+
 [2] "Configuración de una red con múltiples VLAN y servicio DHCP en un mismo servidor - Packet Tracer", YouTube, 2021. [Online]. Disponible: https://www.youtube.com/watch?v=Ekr0vXDnlrM&list=LL&index=7. [Accessed: 28-Sep-2024].
+
 [3] "Como Configurar un WLC y Servidor DHCP", YouTube, 2023. [Online]. Disponible: https://www.youtube.com/watch?v=WRF9f2hPIRA. [Accessed: 28-Sep-2024].
