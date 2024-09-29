@@ -1,6 +1,6 @@
 # Laboratorio II: Red SOHO
 
-## Integrantes:
+## Integrantes
 - **Nicolás Almonacid Muñoz** (0000293190)
 - **Juan Pablo Restrepo Coca** (0000305110)
 - **Mariana Salas Gutiérrez** (0000296781)
