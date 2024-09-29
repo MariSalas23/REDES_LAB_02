@@ -143,6 +143,11 @@ Aunque no se consiguió conectar los dispositivos móviles a la WLAN, si se logr
 #### Tabla de Subnetting
 ![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/sub1.png)
 
+##### Proceso
+Para calcular la dirección de broadcast de una red, identificamos la dirección IP y su máscara de subred. Ambas se convierten a binario, luego se realiza una operación AND entre la dirección IP y la máscara para obtener la dirección de red. Con esta dirección, se localizan los bits de host (ceros en la máscara) y se cambian todos esos bits por 1 en la dirección de red para obtener la dirección de broadcast. Por ejemplo, para la red 172.17.40.0/22, la dirección de broadcast resultante sería 172.17.43.255.
+
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/pro.png)
+
 #### Tabla de Direccionamiento
 ![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/a.png)
 
