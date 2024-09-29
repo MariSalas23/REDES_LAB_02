@@ -119,10 +119,9 @@ Aunque no se consiguió conectar los dispositivos móviles a la WLAN, si se logr
 
 - **(14)** No se utilizó otro servicio adicional.
 
-- **(15)**
+- **(15)** Los archivos TXT con las configuraciones también se encuentran anexados en la tarea de Teams.
      * [Configuración de Routers](https://github.com/MariSalas23/REDES_LAB_02/raw/main/Router_Config.txt)
      * [Configuración de Switches](https://github.com/MariSalas23/REDES_LAB_02/raw/main/Switch_Config.txt)
-     * Los archivos TXT con las configuraciones también se encuentran anexados en la tarea de Teams.
 
 ## 4. Resultados y Análisis
 
