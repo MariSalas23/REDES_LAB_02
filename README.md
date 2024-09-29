@@ -6,7 +6,7 @@
 - **Mariana Salas Gutiérrez** (0000296781)
 
 ## Video
-Link
+https://youtu.be/Y2BbUOhOkcc?feature=shared
 
 ## Introducción
 Las redes empresariales permiten la interconexión de múltiples dispositivos en entornos corporativos, facilitando la comunicación interna y el acceso a servicios externos, como internet. Este informe detalla el diseño, simulación y análisis de una red SOHO utilizando el software Cisco Packet Tracer, dando solución y planteando los desafíos y soluciones presentados durante la configuración y validación.
