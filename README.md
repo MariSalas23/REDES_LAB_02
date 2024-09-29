@@ -15,7 +15,7 @@ El objetivo del presente laboratorio es diseñar, implementar y analizar una red
 Para llevar a cabo el laboratorio y desarrollar la solución de la problemática establecida, se emplea la herramienta de **Cisco Packet Tracer** [1] con el fin de realizar el diseño de la red y su respectiva simulación. Este software nos permite diseñar y simular el comportamiento de una red empresarial, probando las configuraciones de routers, switches, servidores y otros dispositivos necesarios para el funcionamiento de la red. Se configuraron distintos protocolos esenciales como DNS, DHCP y HTTP para asegurar el correcto funcionamiento de la red.
 - **Montaje:** Inicialmente, se realiza el cableado estructurado. Luego, se agrega el módulo WIC-2T para conexiones seriales en los router, Wireless LAN Controller (WLC) 3504 y Lightweight Access Point (LAP) 3702i. Después, se realiza la conexión por medio de las interface. Finalmente, se agregan las viñetas y recuadros para que quede más organizado.
 - **Configuración:** La primera configuración que se realiza es la de los dispositivos switch para crear las VLAN y definir sus puertos. Posteriormente, se configuraron los router para asignar las direcciones IP a las VLAN y definir el servidor DHCP. Tras configurar el router, se determina el servicio de DHCP en el server agregando un gateway, dirección IP de inicio y máscara de red para cada VLAN. A todos los routers y switches se les hizo la configuración básica (contraseña y hostname). Con las redes funcionando, se conectan a través de los routers determinados por rutas estáticas. Finalmente, se agregan los servicios de DNS y HTTP con sus respectivos servidores para poder acceder a una página web.
-- **Verificación:** Primero, se envía un ping desde el router SOHO a los diferentes dispositivos para confirmar que estén bien conectados. Luego, se manda un ping desde PC1 a PC3 para verificar la conectividad entre la misma VLAN. De la misma manera, se revisa la conectividad entre VLAN diferentes. También se confirma que el WLC y el LAP puedan hacer ping entre ellos. Después, se manda un ping entre routers y cuando funciona, se envía otro pero desde un PC. La última prueba que se realizo fue abrir la página *www.jnm.net* desde un PC de prueba.
+- **Verificación:** Primero, se envía un ping desde el router SOHO a los diferentes dispositivos para confirmar que estén bien conectados. Luego, se manda un ping desde PC1 a PC3 para verificar la conectividad entre la misma VLAN. De la misma manera, se revisa la conectividad entre VLAN diferentes. También se confirma que el WLC y el LAP puedan hacer ping entre ellos. Después, se manda un ping entre routers y cuando funciona, se envía otro pero desde un PC. La última prueba que se realizó fue abrir la página *www.jnm.net* desde un PC de prueba.
 
 ## 2. Resultados de configuración y verificación de funcionamiento de la topología
 
@@ -53,7 +53,7 @@ Se crearon diferentes VLANs para organizar el tráfico en la red local:
 - **VLAN 99:** Nativa.
 
 ### Esquema de direccionamiento IPv4
-Se aplicó una metodología de diseño estructurado, donde se segmentó la red en subredes adecuadas para garantizar la correcta distribución de direcciones IP. La segmentación asegura un manejo eficiente de los recursos de IP y la escalabilidad futura del sistema.
+Se aplicó una metodología de diseño estructurado, donde se segmenta la red en subredes adecuadas para garantizar la correcta distribución de direcciones IP. La segmentación asegura un manejo eficiente de los recursos de IP y la escalabilidad futura del sistema.
 
 ![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/dhcp.png)
 **Figura 3.** DHCP.
@@ -69,7 +69,7 @@ Se aplicó una metodología de diseño estructurado, donde se segmentó la red e
 ![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/confi.png)
 **Figura 4.** Configuración básica.
   
-- **(4)**  Se emplea asignación y traducción estática para los servidores. Para la red de SOHO, los demás dispositivos cuentan con asignación dinámica por medio del DHCP. La traducción dinámica se puede aplicar a esta parte de la red considerando que podrían añadirse más dispositivos y hacerlo de forma manual no sería muy eficiente. NAT se debe configurar en el router, al igual que en R_SOHO se cofiguró la IP del DHCP Server.
+- **(4)**  Se emplea asignación y traducción estática para los servidores. Para la red de SOHO, los demás dispositivos cuentan con asignación dinámica por medio del DHCP. La traducción dinámica se puede aplicar a esta parte de la red considerando que podrían añadirse más dispositivos y hacerlo de forma manual no sería muy eficiente. NAT se debe configurar en el router, al igual que en R_SOHO se configuró la IP del DHCP Server.
 
 - **(5)**  Para verificar la asignación eficiente del esquema de direccionamiento desarrollado (tabla de direccionamiento), se usa el comando TCP/IP *show ip interface brief*.
   
@@ -82,12 +82,12 @@ Se aplicó una metodología de diseño estructurado, donde se segmentó la red e
 
 **Figura 6.** VLANs.
 
-- **(8)  y  (9)** Se verifica que haya conectividad entre dispositivos pertenecientes a la misma VLAN con el comando *ping IP_Destino*. En este ejemplo se hace desde PC1, que se conecta con PC3 (ambos son de la VLAN 20). Como el resultado es exitoso y PC3 envía reply, se confirma que los dispositivos tienen conectividad con su puerta de enlace, puesto que logran recorrer la ruta. Adicionalmente, los dispotivos de diferente VLAN también se conectan como se muestra en la siguiente imagen, donde se hizo un ping de PC1 a PC4 (IP 172.17.40.6) y Printer1 (IP 172.17.55.3). Es decir, existe conectividad entre PCs pertenecientes a VLAN distintas gracias a la correcta configuración de los routers, switches y DHCP. Antes de terminar el DHCP había problemas de comunicación entre VLAN, seguramente porque asignar tantas IP de forma manual es ineficiente y pueden ocurrir errores en el proceso.
+- **(8)  y  (9)** Se verifica que haya conectividad entre dispositivos pertenecientes a la misma VLAN con el comando *ping IP_Destino*. En este ejemplo se hace desde PC1, que se conecta con PC3 (ambos son de la VLAN 20). Como el resultado es exitoso y PC3 envía reply, se confirma que los dispositivos tienen conectividad con su puerta de enlace, puesto que logran recorrer la ruta. Adicionalmente, los dispositivos de diferente VLAN también se conectan como se muestra en la siguiente imagen, donde se hizo un ping de PC1 a PC4 (IP 172.17.40.6) y Printer1 (IP 172.17.55.3). Es decir, existe conectividad entre PCs pertenecientes a VLAN distintas gracias a la correcta configuración de los routers, switches y DHCP. Antes de terminar el DHCP había problemas de comunicación entre VLAN, seguramente porque asignar tantas IP de forma manual es ineficiente y pueden ocurrir errores en el proceso.
 
 ![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/conexion.png)
 **Figura 7.** Ping de PC1 a PC3 y Printer1.
 
-- **(10)** El protocolo STP está configurado y el comando es *show spanning tree*. En este caso, la interface fa 0/1 de SW2 fue escogida como raíz por su menor prioridad y dirección MAC.
+- **(10)** El protocolo STP está configurado y el comando es *show spanning tree*. En este caso, para la VLAN 20, la interface fa 0/1 de SW2 fue escogida como raíz por su menor dirección MAC, ya que ambas opciones tenían la misma prioridad. Normalmente, se escoge la de menor prioridad, pero ya que cuentan ambas con 32788, el siguiente criterio es la dirección MAC. Está en estado "FWD" (Forwarding), lo que significa que está activo y reenviando tráfico hacia el puente raíz.
   
 ![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/stp.png)
 **Figura 8.** Spanning-Tree.
@@ -103,7 +103,7 @@ Se aplicó una metodología de diseño estructurado, donde se segmentó la red e
 
 - **(14)** No se utilizó otro servicio adicional.
 
-- **(15)** Los archivos con las configuraciones TXT se encuentran anexadas en la tarea de Teams.
+- **(15)** Los archivos con las configuraciones TXT se encuentran anexados en la tarea de Teams.
 
 ## 4. Resultados y Análisis
 
@@ -140,3 +140,5 @@ En conclusión, la propuesta de la red empresarial permite la correcta conexión
 
 ## 7. Referencias
 [1] "Cisco Packet Tracer", *Cisco Systems*, 2024. [Enlace]. Disponible: https://www.netacad.com/courses/networking/
+
+
