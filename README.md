@@ -5,6 +5,9 @@
 - **Juan Pablo Restrepo Coca** (0000305110)
 - **Mariana Salas Gutiérrez** (0000296781)
 
+## Video
+Link
+
 ## Introducción
 Las redes empresariales permiten la interconexión de múltiples dispositivos en entornos corporativos, facilitando la comunicación interna y el acceso a servicios externos, como internet. Este informe detalla el diseño, simulación y análisis de una red SOHO utilizando el software Cisco Packet Tracer, dando solución y planteando los desafíos y soluciones presentados durante la configuración y validación.
 
@@ -70,51 +73,56 @@ Se aplicó una metodología de diseño estructurado, donde se segmenta la red en
   
 ![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/confi.png)
 **Figura 4.** Configuración básica.
+
+Aunque no se consiguió conectar los dispositivos móviles a la WLAN, si se logró establecer una conexión entre WLC y LAP, logrando entrar a WLC para configurarlo desde un PC.
+
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/wireless.png)
+**Figura 5.** Conexión entre WLC y LAP.
   
 - **(4)**  Se emplea asignación y traducción estática para los servidores. Para la red de SOHO, los demás dispositivos cuentan con asignación dinámica por medio del DHCP. La traducción dinámica se puede aplicar a esta parte de la red considerando que podrían añadirse más dispositivos y hacerlo de forma manual no sería muy eficiente. NAT se debe configurar en el router, al igual que en R_SOHO se configuró la IP del DHCP Server.
 
 - **(5)**  Para verificar la asignación eficiente del esquema de direccionamiento desarrollado (tabla de direccionamiento), se usa el comando TCP/IP *show ip interface brief*.
   
 ![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/ip.png)
-**Figura 5.** Direcciones IP de las Interfaces.
+**Figura 6.** Direcciones IP de las Interfaces.
   
 - **(6)  y  (7)** Para verificar que se hayan creado y configurado correctamente las VLANs que se definieron en la tabla de subnetting, se utiliza el comando *show vlan brief*.
   
 ![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/vlan.png)
 
-**Figura 6.** VLANs.
+**Figura 7.** VLANs.
 
 - **(8)  y  (9)** Se verifica que haya conectividad entre dispositivos pertenecientes a la misma VLAN con el comando *ping IP_Destino*. En este ejemplo, se hace desde PC1 (IP 172.17.20.3), que se conecta con PC3 (IP 172.17.20.2), ambos son de la VLAN 20. Como el resultado es exitoso y PC3 envía reply, se confirma que los dispositivos tienen conectividad con su puerta de enlace, puesto que logran recorrer la ruta. Adicionalmente, los dispositivos de diferente VLAN también se conectan como se muestra en la siguiente imagen, donde se hizo un ping de PC1 a PC4 (IP 172.17.40.3) y a Printer0 (IP 172.17.55.4). Es decir, existe conectividad entre PCs pertenecientes a VLAN distintas gracias a la correcta configuración de los routers, switches y DHCP. Antes de terminar el DHCP, habían problemas de comunicación entre VLANs, probablemente porque asignar tantas IP de forma manual es ineficiente y pueden ocurrir errores en el proceso.
 
 ![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/conexion1.png)
-**Figura 7.** Ping de PC1 a PC3 y Printer1.
+**Figura 8.** Ping de PC1 a PC3 y Printer0.
 
 - **(10)** El protocolo STP está configurado y el comando es *show spanning tree*. En este caso, para la VLAN 20, la interface fa 0/1 de SW2 fue escogida como raíz por su menor dirección MAC, ya que ambas opciones tenían la misma prioridad. Normalmente, se escoge la de menor prioridad, pero ya que cuentan ambas con una de 32788, el siguiente criterio es la dirección MAC. Está en estado "FWD" (Forwarding), lo que significa que está activo y reenviando tráfico hacia el puente raíz.
   
 ![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/stp.png)
-**Figura 8.** Spanning-Tree.
+**Figura 9.** Spanning-Tree.
   
 - **(11)** El comando para realizar un telnet es *telnet Dirección_IP*. En la siguiente imagen se muestra que es posible hacer telnet de un PC a R_SOHO y switches.
   
 ![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/telnet.png)
-**Figura 9.** Telnet.
+**Figura 10.** Telnet.
 
 - **(12)** El tipo ded enrutamiento en las interfaces de red es estático, ya que son rutas simples que casi no varían, como en el caso de las conexiones seriales. También porque se trata de una opción para redes pequeñas, como es el caso de SERVERS, donde solo hay dos servidores y un switch. Anexe la evidencias de configuración. 
 
 ![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/rutas.png)
-**Figura 10.** Rutas.
+**Figura 11.** Rutas.
 
 - **(13)** Los dispositivos de la red SOHO tienen acceso a la página web personalizada alojada en el Servidor Web. El nombre de dominio es gestionado por el servidor DNS. Este nombre debe tener el siguiente formato: Iniciales_nombres_estudiantes.net. La página que se despliega se puede ver en la *Figura 2*.
 
 ![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/dns.png)
-**Figura 11.** DNS.
+**Figura 12.** DNS.
 
 - **(14)** No se utilizó otro servicio adicional.
 
 - **(15)**
-        - [TXT](https://github.com/MariSalas23/REDES_LAB_02/raw/main/Router_Config.txt)
-        - [TXT](https://github.com/MariSalas23/REDES_LAB_02/raw/main/Switch_Config.txt)
-        - Los archivos TXT con las configuraciones también se encuentran anexados en la tarea de Teams.
+        * [Configuración de Routers](https://github.com/MariSalas23/REDES_LAB_02/raw/main/Router_Config.txt)
+        * [Configuración de Switches](https://github.com/MariSalas23/REDES_LAB_02/raw/main/Switch_Config.txt)
+        * Los archivos TXT con las configuraciones también se encuentran anexados en la tarea de Teams.
 
 ## 4. Resultados y Análisis
 
@@ -141,7 +149,32 @@ Se aplicó una metodología de diseño estructurado, donde se segmenta la red en
 
 ### 2) Presente el análisis y proceso de configuración de los servicios de red requeridos para el correcto funcionamiento de la red empresarial. 
 
+#### DNS
+
+
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/server.png)
+**Figura 13.** Servidor DNS.
+
+#### HTTP
+Para configurar el servicio de HTTP primero se configuró la dirección IP de forma estática, de acuerdo con la tabla de direccionamiento. Como pertenece a la red de SERVERS, su dirección es 161.130.2.5, perteneciendo a la red 161.132.130.0 / 28. La máscara fue seleccionada para permitir 10 host, como indicaba el laboratorio. Posteriormente, se modifica el index.html para que muestre la página personalizada que aparece en la *Figura 2*.
+
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/http.png)
+**Figura 14.** HTTP.
+
+Los servicios DNS y HTTP demuestran ser exitosos y tienen el comportamiento esperado. Lo anterior se debe a que existe la debida conexión entre el servidor web y el servidor DNS, como se evidencia en la simulación. Además, se logra visualizar la página web como se ve en la *Figura 2* al ingresar, desde un PC por medio del web browser, *www.jnm.net*.
+
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/con1.png)
+**Figura 15.** Conexión entre DNS y HTTP.
+
+#### DHCP
+
+![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/disp.png)
+**Figura 16.** Conexión entre Servidor DHCP y dispositivos.
+
 ### 3) Evalúe el flujo bidireccional de datos generado al acceder a la página alojada en el servidor Web por los nodos terminales (PCs y dispositivos móviles) de las diferentes VLANs que conforman la topología de la Figura 1, utilizando el servicio DNS. Como también, al verificar la conectividad de un PCs a otro y de un PC al Gateway. Justifique su análisis utilizando capturas con el simulador y los filtros de paquetes de Cisco Packet Tracer. 
+
+
+
 
 ## 5. Desafíos
 Durante el proceso de configuración en **Cisco Packet Tracer**, uno de los desafíos más grandes fue la correcta configuración de las VLANs y la asignación de direcciones IP dinámicas utilizando DHCP. La configuración del WLC también fue un gran reto a solucionar.
