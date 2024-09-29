@@ -1,0 +1,48 @@
+Router>enable
+Router#conf ter
+Router(config)#hostname R_SOHO
+R_SOHO(config)#line console 0
+R_SOHO(config-line)#password password
+R_SOHO(config-line)#login
+R_SOHO(config-line)#exit
+R_SOHO(config)#line vty 0 15
+R_SOHO(config-line)#password password
+R_SOHO(config-line)#login
+R_SOHO(config-line)#exit
+R_SOHO(config)#enable secret password
+R_SOHO(config)#service password-encryption
+R_SOHO(config)#banner motd #Solo personal autorizado#
+R_SOHO(config)#int fa 0/1
+R_SOHO(config-if)#no shutdown
+R_SOHO(config-if)#exit
+R_SOHO(config)#int fa 0/1.20
+R_SOHO(config-subif)#encapsulation dot1Q 20
+R_SOHO(config-subif)#ip address 172.17.20.1 255.255.252.0
+R_SOHO(config-subif)#exit
+R_SOHO(config)#int fa 0/1.40
+R_SOHO(config-subif)#encapsulation dot1Q 40
+R_SOHO(config-subif)#ip address 172.17.40.1 255.255.252.0
+R_SOHO(config-subif)#exit
+R_SOHO(config)#int fa 0/1.55
+R_SOHO(config-subif)#encapsulation dot1Q 55
+R_SOHO(config-subif)#ip address 172.17.55.1 255.255.255.0
+R_SOHO(config-subif)#exit
+R_SOHO(config)#int fa 0/1.99
+R_SOHO(config-subif)#encapsulation dot1Q 99
+R_SOHO(config-subif)#ip address 172.17.99.1 255.255.255.0
+R_SOHO(config-subif)#exit
+R_SOHO(config)#int fa 0/1.20
+R_SOHO(config-subif)#ip helper-address 172.17.55.2
+R_SOHO(config-subif)#exit
+R_SOHO(config)#int fa 0/1.40
+R_SOHO(config-subif)#ip helper-address 172.17.55.2
+R_SOHO(config-subif)#exit
+R_SOHO(config)#int fa 0/1.55
+R_SOHO(config-subif)#ip helper-address 172.17.55.2
+R_SOHO(config-subif)#exit
+R_SOHO(config)#int fa 0/1.99
+R_SOHO(config-subif)#ip helper-address 172.17.55.2
+R_SOHO(config-subif)#exit
+R_SOHO(config)#exit
+R_SOHO#copy running-config startup-config
+

@@ -1,0 +1,59 @@
+Switch>enable
+Switch#conf ter
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#hostname SW2
+SW2(config)#line con 0
+SW2(config-line)#password password
+SW2(config-line)#login
+SW2(config-line)#exit
+SW2(config)#line vty 0 15
+SW2(config-line)#password password
+SW2(config-line)#login
+SW2(config-line)#exit
+SW2(config)#enable secret password
+SW2(config)#service password-encryption
+SW2(config)#banner motd #Solo personal autorizado#
+SW2(config)#vlan 20
+SW2(config-vlan)#name VLAN20
+SW2(config-vlan)#exit
+SW2(config)#vlan 40
+SW2(config-vlan)#name VLAN40
+SW2(config-vlan)#exit
+SW2(config)#vlan 55
+SW2(config-vlan)#name VLAN55
+SW2(config-vlan)#exit
+SW2(config)#vlan 99
+SW2(config-vlan)#name NATIVA
+SW2(config-vlan)#exit
+SW2(config)#int range fa 0/3-12
+SW2(config-if-range)#switch mode access
+SW2(config-if-range)#switchport access vlan 20
+SW2(config-if-range)#exit
+SW2(config)#int range fa 0/13-18
+SW2(config-if-range)#switch mode access
+SW2(config-if-range)#switchport access vlan 40
+SW2(config-if-range)#exit
+SW2(config)#int range fa 0/19-23
+SW2(config-if-range)#switch mode access
+SW2(config-if-range)#switchport access vlan 55
+SW2(config-if-range)#exit
+SW2(config)#int range g 0/1-2
+SW2(config-if-range)#switch mode trunk
+SW2(config-if-range)#switchport trunk allowed vlan 20,40,55,99
+SW2(config-if-range)#switchport trunk native vlan 99
+SW2(config-if-range)#no shutdown
+SW2(config-if-range)#exit
+SW2(config)#int range fa 0/1-2
+SW2(config-if-range)#switch mode trunk
+SW2(config-if-range)#switchport trunk allowed vlan 20,40,55,99
+SW2(config-if-range)#switchport trunk native vlan 99
+SW2(config-if-range)#no shutdown
+SW2(config-if-range)#exit
+SW2(config)#int fa 0/24
+SW2(config-if-range)#switch mode trunk
+SW2(config-if-range)#switchport trunk allowed vlan 20,40,55,99
+SW2(config-if-range)#switchport trunk native vlan 99
+SW2(config-if-range)#no shutdown
+SW2(config-if-range)#exit
+SW2(config)#exit
+SW2#copy running-config startup-config
