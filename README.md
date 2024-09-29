@@ -13,8 +13,8 @@ El objetivo del presente laboratorio es diseñar, implementar y analizar una red
 
 ## 1. Metodología
 Para llevar a cabo el laboratorio y desarrollar la solución de la problemática establecida, se emplea la herramienta de **Cisco Packet Tracer** [1] con el fin de realizar el diseño de la red y su respectiva simulación. Este software nos permite diseñar y simular el comportamiento de una red empresarial, probando las configuraciones de routers, switches, servidores y otros dispositivos necesarios para el funcionamiento de la red. Se configuraron distintos protocolos esenciales como DNS, DHCP y HTTP para asegurar el correcto funcionamiento de la red.
-- **Montaje:** Inicialmente, se realiza el cableado estructurado. Luego, se agrega el módulo WIC-2T para conexiones seriales en los router, Wireless LAN Controller (WLC) 3504 y Lightweight Access Point (LAP) 3702i. Después, se realiza la conexión por medio de las interface. Finalmente, se agregan las viñetas y recuadros para que quede más organizado.
-- **Configuración:** La primera configuración que se realiza es la de los dispositivos switch para crear las VLAN y definir sus puertos. Posteriormente, se configuraron los router para asignar las direcciones IP a las VLAN y definir el servidor DHCP. Tras configurar el router, se determina el servicio de DHCP en el server agregando un gateway, dirección IP de inicio y máscara de red para cada VLAN. A todos los routers y switches se les hizo la configuración básica (contraseña y hostname). Con las redes funcionando, se conectan a través de los routers determinados por rutas estáticas. Finalmente, se agregan los servicios de DNS y HTTP con sus respectivos servidores para poder acceder a una página web.
+- **Montaje:** Inicialmente, se realiza el cableado estructurado. Luego, se agrega el módulo WIC-2T para conexiones seriales en los router, Wireless LAN Controller (WLC) 3504 y Lightweight Access Point (LAP) 3702i. Después, se realiza la conexión por medio de las interfaces. Finalmente, se agregan las viñetas y recuadros para que quede más organizado.
+- **Configuración:** La primera configuración que se realiza es la de los dispositivos switch para crear las VLAN y definir sus puertos. Posteriormente, se configuraron los router para asignar las direcciones IP a las VLAN y definir el servidor DHCP. Tras configurar el router, se determina el servicio de DHCP en el server agregando un gateway, dirección IP de inicio y máscara de red para cada VLAN. A todos los routers y switches se les hizo la configuración básica (contraseña y hostname). Con las redes funcionando, se conectan a través de los routers determinados por rutas estáticas. Al final, se agregan los servicios de DNS y HTTP con sus respectivos servidores para poder acceder a una página web.
 - **Verificación:** Primero, se envía un ping desde el router SOHO a los diferentes dispositivos para confirmar que estén bien conectados. Luego, se manda un ping desde PC1 a PC3 para verificar la conectividad entre la misma VLAN. De la misma manera, se revisa la conectividad entre VLAN diferentes. También se confirma que el WLC y el LAP puedan hacer ping entre ellos. Después, se manda un ping entre routers y cuando funciona, se envía otro pero desde un PC. La última prueba que se realizó fue abrir la página *www.jnm.net* desde un PC de prueba.
 
 ## 2. Resultados de configuración y verificación de funcionamiento de la topología
@@ -32,7 +32,7 @@ La topología de la red está diseñada para una empresa que conecta sus disposi
 - **Dispositivos finales:** Laptops, PCs y smartphones que se intercomunican entre ellos.
 
 ### Tipos de redes
-- **Red de Área Local (LAN):** Es el tipo de red empleada para la red implementada en este laboratorio.
+- **Red de Área Local (LAN):** Es el tipo de red empleada en este laboratorio.
 - **Red de Área Local Inalámbrica (WLAN):** Para los dispositivos móviles, PCs, impresoras, tablets y laptops que usan medios no guiados.
 - **Red de Área Amplia (WAN):** La red externa que permite el acceso a internet mediante el router.
 
@@ -58,13 +58,15 @@ Se aplicó una metodología de diseño estructurado, donde se segmenta la red en
 ![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/dhcp.png)
 **Figura 3.** DHCP.
 
+- Más capturas de configuración y verificación se encuentran en los siguientes apartados para resolver las preguntas propuestas en el laboratorio, analizar los resultados y justificar las conclusiones.
+
 ## 3. Respuestas a las preguntas formuladas en la sección de procedimiento
 
 - **(1)**  El esquema de direccionamiento IPv4 basado en los requerimientos de red, y considerando X = 1, se presenta en las tablas de subnetting y direccionamiento en el apartado *4. Resultados y Análisis*.
   
 - **(2)**  El montaje de la topología propuesta se puede visualizar en la *Figura 1*.
   
-- **(3)**  A continuación, se evidencia la configuración básica en los routers y switches, definiendo una contraseña y hostname. A lo largo de la wiki se muestra evidencia de la correcta configuración de las VLAN y direcciones IP.
+- **(3)**  A continuación, se demuestra la configuración básica en los routers y switches, definiendo una contraseña y hostname. A lo largo de la Wiki, se muestra evidencia de la correcta configuración de las VLAN y direcciones IP.
   
 ![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/confi.png)
 **Figura 4.** Configuración básica.
@@ -82,12 +84,12 @@ Se aplicó una metodología de diseño estructurado, donde se segmenta la red en
 
 **Figura 6.** VLANs.
 
-- **(8)  y  (9)** Se verifica que haya conectividad entre dispositivos pertenecientes a la misma VLAN con el comando *ping IP_Destino*. En este ejemplo se hace desde PC1, que se conecta con PC3 (ambos son de la VLAN 20). Como el resultado es exitoso y PC3 envía reply, se confirma que los dispositivos tienen conectividad con su puerta de enlace, puesto que logran recorrer la ruta. Adicionalmente, los dispositivos de diferente VLAN también se conectan como se muestra en la siguiente imagen, donde se hizo un ping de PC1 a PC4 (IP 172.17.40.6) y Printer1 (IP 172.17.55.3). Es decir, existe conectividad entre PCs pertenecientes a VLAN distintas gracias a la correcta configuración de los routers, switches y DHCP. Antes de terminar el DHCP había problemas de comunicación entre VLAN, seguramente porque asignar tantas IP de forma manual es ineficiente y pueden ocurrir errores en el proceso.
+- **(8)  y  (9)** Se verifica que haya conectividad entre dispositivos pertenecientes a la misma VLAN con el comando *ping IP_Destino*. En este ejemplo, se hace desde PC1, que se conecta con PC3 (ambos son de la VLAN 20). Como el resultado es exitoso y PC3 envía reply, se confirma que los dispositivos tienen conectividad con su puerta de enlace, puesto que logran recorrer la ruta. Adicionalmente, los dispositivos de diferente VLAN también se conectan como se muestra en la siguiente imagen, donde se hizo un ping de PC1 a PC4 (IP 172.17.40.6) y Printer1 (IP 172.17.55.3). Es decir, existe conectividad entre PCs pertenecientes a VLAN distintas gracias a la correcta configuración de los routers, switches y DHCP. Antes de terminar el DHCP, habían problemas de comunicación entre VLAN, probablemente porque asignar tantas IP de forma manual es ineficiente y pueden ocurrir errores en el proceso.
 
 ![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/conexion.png)
 **Figura 7.** Ping de PC1 a PC3 y Printer1.
 
-- **(10)** El protocolo STP está configurado y el comando es *show spanning tree*. En este caso, para la VLAN 20, la interface fa 0/1 de SW2 fue escogida como raíz por su menor dirección MAC, ya que ambas opciones tenían la misma prioridad. Normalmente, se escoge la de menor prioridad, pero ya que cuentan ambas con 32788, el siguiente criterio es la dirección MAC. Está en estado "FWD" (Forwarding), lo que significa que está activo y reenviando tráfico hacia el puente raíz.
+- **(10)** El protocolo STP está configurado y el comando es *show spanning tree*. En este caso, para la VLAN 20, la interface fa 0/1 de SW2 fue escogida como raíz por su menor dirección MAC, ya que ambas opciones tenían la misma prioridad. Normalmente, se escoge la de menor prioridad, pero ya que cuentan ambas con una de 32788, el siguiente criterio es la dirección MAC. Está en estado "FWD" (Forwarding), lo que significa que está activo y reenviando tráfico hacia el puente raíz.
   
 ![Imagen](https://github.com/MariSalas23/REDES_LAB_02/raw/main/stp.png)
 **Figura 8.** Spanning-Tree.
@@ -103,7 +105,7 @@ Se aplicó una metodología de diseño estructurado, donde se segmenta la red en
 
 - **(14)** No se utilizó otro servicio adicional.
 
-- **(15)** Los archivos con las configuraciones TXT se encuentran anexados en la tarea de Teams.
+- **(15)** Los archivos TXT con las configuraciones se encuentran anexados en la tarea de Teams.
 
 ## 4. Resultados y Análisis
 
@@ -128,15 +130,15 @@ Se aplicó una metodología de diseño estructurado, donde se segmenta la red en
 #### Tabla de Direccionamiento
 ![Imagen](ADDRESS_TABLE.png)
 
-###2) Presente el análisis y proceso de configuración de los servicios de red requeridos para el correcto funcionamiento de la red empresarial. 
+### 2) Presente el análisis y proceso de configuración de los servicios de red requeridos para el correcto funcionamiento de la red empresarial. 
 
-###3) Evalúe el flujo bidireccional de datos generado al acceder a la página alojada en el servidor Web por los nodos terminales (PCs y dispositivos móviles) de las diferentes VLANs que conforman la topología de la Figura 1, utilizando el servicio DNS. Como también, al verificar la conectividad de un PCs a otro y de un PC al Gateway. Justifique su análisis utilizando capturas con el simulador y los filtros de paquetes de Cisco Packet Tracer. 
+### 3) Evalúe el flujo bidireccional de datos generado al acceder a la página alojada en el servidor Web por los nodos terminales (PCs y dispositivos móviles) de las diferentes VLANs que conforman la topología de la Figura 1, utilizando el servicio DNS. Como también, al verificar la conectividad de un PCs a otro y de un PC al Gateway. Justifique su análisis utilizando capturas con el simulador y los filtros de paquetes de Cisco Packet Tracer. 
 
 ## 5. Desafíos
 Durante el proceso de configuración en **Cisco Packet Tracer**, uno de los desafíos más grandes fue la correcta configuración de las VLANs y la asignación de direcciones IP dinámicas utilizando DHCP. La configuración del WLC también fue un gran reto a solucionar.
 
 ## 6. Conclusiones y Recomendaciones
-En conclusión, la propuesta de la red empresarial permite la correcta conexión de una red de área local al internet. Durante el desarrollo de la solución se presentaron desafíos, especialmente en la implementación de VLANs y servicios avanzados como NAT y AAA. A pesar de los retos, este trabajo reforzó los conocimientos del grupo sobre el diseño de redes empresariales y la configuración de dispositivos en **Cisco Packet Tracer**.
+En conclusión, la propuesta de la red empresarial permite la correcta conexión de una red de área local al internet. Durante el desarrollo de la solución se presentaron desafíos, especialmente en la implementación de VLANs y servicios como DHCP. A pesar de los retos, este trabajo reforzó los conocimientos del grupo sobre el diseño de redes empresariales y la configuración de dispositivos en **Cisco Packet Tracer**.
 
 ## 7. Referencias
 [1] "Cisco Packet Tracer", *Cisco Systems*, 2024. [Enlace]. Disponible: https://www.netacad.com/courses/networking/
