@@ -85,17 +85,17 @@ Se aplicó una metodología de diseño estructurado, donde se segmentó la red e
 - **(8)  y  (9)** Se verifica que haya conectividad entre dispositivos pertenecientes a la misma VLAN con el comando *ping IP_Destino*. En este ejemplo se hace desde PC1, que se conecta con PC3 (ambos son de la VLAN 20). Como el resultado es exitoso y PC3 envía reply, se confirma que los dispositivos tienen conectividad con su puerta de enlace, puesto que logran recorrer la ruta. Adicionalmente, los dispotivos de diferente VLAN también se conectan como se muestra en la siguiente imagen, donde se hizo un ping de PC1 a PC4 (IP 172.17.40.6) y Printer1 (IP 172.17.55.3). Es decir, existe conectividad entre PCs pertenecientes a VLAN distintas gracias a la correcta configuración de los routers, switches y DHCP. Antes de terminar el DHCP había problemas de comunicación entre VLAN, seguramente porque asignar tantas IP de forma manual es ineficiente y pueden ocurrir errores en el proceso.
 
 ![Imagen](conexion.png)
-**Figura 6.** Ping de PC1 a PC3 y Printer1.
+**Figura 7.** Ping de PC1 a PC3 y Printer1.
 
 - **(10)** El protocolo STP está configurado y el comando es *show spanning tree*. En este caso, la interface fa 0/1 de SW2 fue escogida como raíz por su menor prioridad y dirección MAC.
   
 ![Imagen](stp.png)
-**Figura 7.** Spanning-Tree.
+**Figura 8.** Spanning-Tree.
   
 - **(11)** El comando para realizar un telnet es *telnet Dirección_IP*. En la siguiente imagen se muestra que es posible hacer telnet de un PC a R_SOHO y switches.
   
 ![Imagen](telnet.png)
-**Figura 8.** Telnet.
+**Figura 9.** Telnet.
 
 - (12) Rutas
 
